@@ -4,13 +4,14 @@ Enable full Sinhala Unicode support in Indesign
 
 ##Set Up
 
-###CS5 CS5.5 CS6
+###CS5.5 CS6
 
 ####MacOS
 
 - Copy files and folder `si_LK` to `/Library/Application Support/Adobe/Linguistics/6.0/Providers/Plugins2/AdobeHunspellPlugin.bundle/Contents`
 
-- Replace `Info.plist` file in `/Library/Application Support/Adobe/Linguistics/6.0/Providers/Plugins2/AdobeHunspellPlugin.bundle/Contents` with provided `Info.plist` file.
+- Add a string element with value `si_LK` (`<string>si_LK</string>`)  to the Spelling Service and UserDictionaryService Elements  in `Info.plist`. Find the file in `/Library/Application Support/Adobe/Linguistics/6.0/Providers/Plugins2/AdobeHunspellPlugin.bundle/Contents`
+`
 
 For CS4 5, 5.5
 - Copy `enable-world-ready.jsx` into `/Applications/Adobe InDesign CS5.5/Scripts/Scripts Panel`
